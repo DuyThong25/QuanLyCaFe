@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<section class="contact" id="contact">
+
+    <div class="row">
+        <h1 class="heading"> <span>LIÊN HỆ</span></h1>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>Mọi thắc mắc xin liên hệ trực tiếp với chúng tôi:</h3>
+            <p style="font-size: 1.8rem; font-weight: 800;color: var(--main-color);"><span style="margin-right:24px;">Tên:</span> Đinh Hoàng Minh Thuận</p>
+            <p style="font-size: 1.8rem; font-style: italic;color: #eee;"><span style="margin-right:4px;">MSSV:</span> 20DH111098</p>
+            <p style="font-size: 1.8rem; font-weight: 800;color: var(--main-color);"><span style="margin-right:24px;">Tên:</span> Đặng Duy Thông</p>
+            <p style="font-size: 1.8rem; font-style: italic;color: #eee;"><span style="margin-right:4px;">MSSV:</span> 20DH111195</p>
+            <p style="font-size: 1.8rem; font-weight: 800;color: var(--main-color);"><span style="margin-right:24px;">Tên:</span> Huỳnh Minh An</p>
+            <p style="font-size: 1.8rem; font-style: italic;color: #eee;"><span style="margin-right:4px;">MSSV:</span> 20DH711243</p>
+
+            <div style="margin-top:80px;">
+                <p><i class="fas fa-phone"></i><a href="#"> (+84 28) 38 632 052 </a></p>
+                <p><i class="fas fa-envelope"></i> <a href="https://mail.google.com/">contact@huflit.edu.vn</a></p>
+                <p><i class="fas fa-fax"></i> <a href="#">(+84 28) 38 650 991</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4648807452513!2d106.66645882962867!3d10.775662465650866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2s!4v1637126107830!5m2!1svi!2s"></iframe>
+
+        <form id="form" action="">
+            <h3>Nhập thông tin và nội dung</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input name="Name" id="name" type="text" placeholder="Tên của bạn" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input name="Email" id="email" type="email" placeholder="Email của bạn" onkeydown="validation()" required>
+                <span id="email-text"></span>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input name="phone" id="phone" type="tel" placeholder="Số điện thoại" pattern="[0-9]{10}" required>
+            </div>
+            <div class="inputBox">
+                <!-- <span class="fas fa-phone"></span> -->
+                <input type="text" placeholder="Nội dung ít nhất 100 ký tự" minlength="100" required>
+            </div>
+            <input type="submit" value="gửi phản hồi" onclick="return confirm('Bạn chắc chắn muốn gửi chưa !?')" class="btn">
+        </form>
+
+    </div>
+

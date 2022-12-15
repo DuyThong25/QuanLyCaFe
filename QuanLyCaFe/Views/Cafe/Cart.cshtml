@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<div class="cart-page">
+    <table>
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <a href="~/Cafe/product_item.html"><img src="~/image/ca-phe-viet-full.jpg"></a>
+                    <div>
+                        <a href="~/Cafe/product_item.html"><p style="color: #eee;">Nescafe Cà Phê Việt</p></a>
+                        <small>Giá: 49.000đ</small><br>
+                        <a href="">Xóa</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>49.000đ</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="~/image/cart-item-1.png">
+                    <div>
+                        <p>Cà phê 1</p>
+                        <small>Giá: 30.000đ</small><br>
+                        <a href="">Xóa</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>30.000đ</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="~/image/cart-item-2.png">
+                    <div>
+                        <p>Cà phê 2</p>
+                        <small>Giá: 30.000đ</small><br>
+                        <a href="">Xóa</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>30.000đ</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="~/image/cart-item-3.png">
+                    <div>
+                        <p>Cà phê 3</p>
+                        <small>Giá: 30.000đ</small><br>
+                        <a href="">Xóa</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>30.000đ</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="~/image/cart-item-4.png">
+                    <div>
+                        <p>Cà phê 4</p>
+                        <small>Giá: 30.000đ</small><br>
+                        <a href="">Xóa</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>30.000đ</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Tổng tiền</td>
+                <td>169.000đ</td>
+            </tr>
+            <tr>
+                <td>Thuế</td>
+                <td>17.000đ</td>
+            </tr>
+            <tr>
+                <td>Thanh toán</td>
+                <td>186.000đ</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="total-price">
+        <a href="#" class="btn">Thanh toán &#8594;</a>
+    </div>
+</div>
